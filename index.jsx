@@ -17,7 +17,7 @@ export function createStoresContext() {
             });
             return { index: stores.length - 1 };
         },
-        StoreProvider: ({ children }) =>
+        Provider: ({ children }) =>
             stores.reduce(
                 (nodes, store) => <store.Provider>{nodes}</store.Provider>,
                 children

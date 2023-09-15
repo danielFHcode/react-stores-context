@@ -8,8 +8,6 @@ export type StoreMarker<T> = {
 
 export function createStoresContext(): {
     createStore: <T>(initialState: T) => StoreMarker<T>;
-    StoreProvider: (
-        ...args: Parameters<FC>
-    ) => Provider<UseStateReturnType<any>>;
+    Provider: (...args: Parameters<FC>) => Provider<UseStateReturnType<any>>;
     useStore: <T>(storeMarker: StoreMarker<T>) => UseStateReturnType<T>;
 };
