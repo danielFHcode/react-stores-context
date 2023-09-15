@@ -1,0 +1,25 @@
+{
+    "name": "react-stores-context",
+    "version": "0.0.1",
+    "description": "A lightweight store solution for react.",
+    "main": "dist/index.esm.minified.js",
+    "scripts": {
+        "build": "node build",
+        "watch:build": "nodemon --watch index.jsx --exec npm run build"
+    },
+    "keywords": [
+        "react",
+        "stores",
+        "state",
+        "context"
+    ],
+    "author": "Daniel F.H.",
+    "license": "ISC",
+    "types": "./index.d.ts",
+    "devDependencies": {
+        "@babel/core": "^7.22.19",
+        "@babel/preset-env": "^7.22.15",
+        "@babel/preset-react": "^7.22.15",
+        "nodemon": "^3.0.1"
+    }
+}
